@@ -1,0 +1,59 @@
+/* make a phone  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: transparent;
+    border: 16px solid transparent;
+    border-radius: 36px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Simulate Home Button */
+.phone::before {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+/* Simulate Camera */
+.phone::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+
+/* my own */
+#darkMode{
+    margin:2px ;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+body{
+    background-color: rgb(217, 255, 0);
+}
